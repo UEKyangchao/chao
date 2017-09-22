@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+
+	}
+main{
+	width: 800px;
+	height: auto;
+	margin: 20px auto;
+	padding: 10px 20px;
+}
+table{
+	width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+     padding: 6px 12px;
+     font-weight: normal;
+     border-bottom: 2px solid red;
+}
+td{
+	border-top: 1px solid #333;
+	 padding: 6px 12px;
+	/*  font-weight: normal; */
+}
+tr:nth-of-type(2n){
+	background:#f7f7f7;
+}
+button{
+	padding: 4px 12px;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+.btn1{
+    background: #ff6700;
+}
+.btn2{
+     background: green;
+     float: right ;
+     margin-top: 20px;
+     margin-right: 27px;
+}
+
+	</style>
+</head>
+<body>
+	<main>
+		<table>
+			<tr>
+				<th>姓名</th>
+				<th>性别</th>
+				<th>年龄</th>
+				<th>电话</th>
+				<th>籍贯</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td class="del"><button class="btn1">删除</button></td>
+			</tr>
+			<tr>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td class="del"><button class="btn1">删除</button></td>
+			</tr>
+			<tr>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td>zhangsan</td>
+				<td class="del"><button class="btn1">删除</button></td>
+			</tr>
+
+		</table>
+		<button class="btn2">添加</button>
+	</main>
+</body>
+</html> 
+<script>
+    let tbody = document.querySelector('tbody')
+	 let  add = document.querySelector('.btn2')
+	 add.onclick = function () {
+	 	let tr = document.createElement('tr')
+	 	tr.innerHTML=`
+	 	        <td>李四</td>
+				<td>男</td>
+				<td>18</td>
+				<td>882641418761</td>
+				<td>山西省市</td>
+				<td><button class="btn1">删除</button></td>
+	 	`;
+	 	 tbody.appendChild(tr)
+	 }
+	/*修改   可编辑状态：当前单元格里面插入一个input 
+	1\input
+	2\content  -> input
+	3\清空
+	4.input - >  td
+	更新:表单失去焦点  blur
+	1 input 
+	2  input removeChild
+	3  newvalue -> 单元格
+	*/
+  tbody.ondblclick = function(e){
+   	let ele =e.target;
+   	if(ele.nodeName=='TD' && ele.className!= 'del'){
+   		// console.log(1)
+   	    let inputs=document.createElement('input')
+   	        inputs.value =ele.innerText;
+   	        ele.innerText='';
+   	        ele.appendChild(inputs)
+   	        inputs.onblur =function(){
+   	        	let newvalue = inputs.value;
+   	        	ele.removeChild(inputs)
+   	        	inputs=null;
+   	        	ele.innerText=newvalue.trim();
+   	        }
+   	}else if(ele.nodeName=='BUTTON'){
+   		let tr = ele.parentNode.parentNode;
+   		tbody.removeChild(tr)
+   		tr=null;
+
+   	}
+  } 
+  /*
+  
+  删除
+   */
+
+</script> 

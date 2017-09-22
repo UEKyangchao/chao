@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="css/demo.css">
+        <title>document</title>
+    </head>
+    <style>
+    .box{
+    	width: 300px;
+    	height: 350px;
+    	background: pink;
+    	font-size: 10px;
+    	margin: 0 auto;
+    }
+    .son{
+    	width: 200px;
+    	height: 200px;
+    	background: blue;
+
+    }
+    .point{
+				width: 1px;
+				height: 1px;
+				background: red;
+				border-radius: 50%;
+				
+			}
+			.circle{
+				width:10px;
+				height: 10px;
+				border-radius: 50%;
+				 position: absolute;
+				top: 0;
+				left: 0;
+				right:0;
+				bottom:0;
+				margin: auto; 
+				transition: 0.5s;
+			}
+
+    </style>
+    <!-- <body>
+    <div class="box" id="box" active='zhangsan'>
+    	
+    </div>
+    <img src="" alt=""> -->
+    <div class="point"></div>
+    </body>
+</html>
+<script>
+	let  box =document.querySelector('.box')
+	//let divs = document.createElement('div')
+	// divs.classList.add('son')
+	// div.style.cssText=`
+	//     width:200px;height:200px;
+	//     backgroung:red;
+	// `
+	// box.appendChild(divs)
+	// 
+	// box.id
+    //alert ( box.getAttribute('active'))
+    //在原型上面继承一个方法
+    function insertAfter（insert,position）{
+    	let next = position.nextElementSibling;
+    	let parent = position.parentNode;
+    	if(next){
+            parent.insertBefore(insert,next);
+    	}else(){
+    		parent.appendChild(insert)
+    		   	}
+
+    }
+HTMLElement.prototype.insertAfter=function (insert) {
+
+    	let next = this.nextElementSibling;
+    	let parent = this.parentNode;
+    	if(next){
+            parent.insertBefore(insert,next);
+    	}else(){
+    		parent.appendChild(insert)
+    }		  
+}
+HTMLElement.prototype.appendBefor=function (insert){
+	let frist = this.fristElementChild;
+	if(frist){
+		this.insertBefor(insert,frist)
+	}else(){ 
+		this.appendChild(insert)
+	}
+
+}
+HTMLElement.prototype.insertTo=function (){
+
+
+}
+HTMLElement.prototype.prependTo=function (parent){
+	parent.prependChild(this)
+
+}
+	let point=document.querySelector(".point")
+	let colorArr=[0,3,6,9,"C","F"];
+	let ww=window.innerWidth-30;
+	let wh=window.innerHeight-30;
+	for(let i=0;i<10;i++){
+		let div=document.createElement("div")
+		let widths=Math.round(Math.random()*15+15);
+		let lefts=Math.round(Math.random()*ww)-ww/2;
+		let tops=Math.round(Math.random()*wh)-wh/2;
+		div.classList.add("circle");
+		div.style.cssText=`
+		  width:${widths}px;
+		  height:${widths}px;
+		  background:${color(colorArr)};
+		`;
+		point.appendChild(div);
+		setTimeout(()=>{
+			div.style.left=`${lefts}px`;
+			div.style.top=`${tops}px`;
+		},1);
+	}
+	function color(arr){
+		let str="#";
+		for(let i=0;i<3;i++){
+			let ele=Math.floor(arr.length*Math.random());
+            str += arr[ele];
+		}	
+		return str;
+	}
+	// HTMLElement.prototype.empty=function (){
+	// 	let all = this.childNodes;
+	// 	for (let i=all.length-1;i>0;i--){
+	// 		this.removeChild(all[i])
+	// 	}
+	// }
+	// HTMLElement.prototype.empty=function (){
+	// 	let all = this.childNodes;
+	// 	this.innerHTML='';
+	// }
+	// HTMLElement.prototype.remove=function(){
+	// 	let parent = this.parentNode;
+	// 	parent.removeChild(this); 
+	// }
+	// HTMLElement.prototype.next=function(){
+	// 	let next = this.nextElementSibling;
+	// 	if(next){
+	// 		return next;
+	// 	}else{
+	// 		return false;
+	// 	}
+	// }
+	// HTMLElement.prototype.nextAll=function(){
+	// 	let nexte=this.next;
+	// 	let newarr=[];
+	// 	if(nexte){
+	// 		newarr.push(nexte);
+	// 	}else{
+	// 		return  false;
+	// 	}
+	// 	while(nexte){
+	// 		nexte=nexte.next;
+	// 	}
+	// 	newarr.pop();
+	// 	return newarr;
+	// }
+	//next()   nextAll()    nextUntil()   previous()
+</script>

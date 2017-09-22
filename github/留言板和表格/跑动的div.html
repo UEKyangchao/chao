@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+	.box{
+		width: 100px;
+		height: 100px;
+		background: #ff6700;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+</style>
+<body>
+	<div class="box">
+		
+	</div>
+</body>
+</html>
+<script>
+	let box =document.querySelector('.box')
+
+	let speed=1; //定义一个步进值
+	let maxH = window.innerHeight-box.offsetHeight;
+	 //设置盒子的最大高度
+	setInterval(function(){
+		let tops= box.offsetTop;
+		
+		if(tops>=maxH){
+			speed*=-1
+		}//第一次返回
+		if(tops<0){
+			speed*=-1
+		}//第二次返回
+		box.style.top=`${tops+speed}px`//让盒子往下掉
+	},20)
+	let speede =2;
+	let maxW = window.innerWidth-box.offsetWidth;
+	console.log(maxW)
+	setInterval(function(){
+		let Wids= box.offsetLeft;
+	
+		if(Wids>=maxW){
+			speede*=-1
+		}//第一次返回
+		if(Wids<0){
+			speede*=-1
+		}//第二次返回
+		box.style.left=`${Wids+speede}px`//让盒子往下掉
+	},20)
+
+</script>

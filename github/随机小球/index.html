@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.point{
+				width: 1px;
+				height: 1px;
+				background: red;
+				border-radius: 50%;
+				/* position: absolute;
+				top: 0;
+				left: 0;
+				right:0;
+				bottom:0;
+				margin: auto; */
+			}
+			.circle{
+				width:100px;
+				height: 100px;
+				/*background: green;*/
+				border-radius: 50%;
+				 position: absolute;
+				top: 0;
+				left: 0;
+				right:0;
+				bottom:0;
+				margin: auto; 
+				transition: .5s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="point"></div>
+	</body>
+</html>
+<script>
+	let point=document.querySelector(".point")
+	let colorArr=[0,3,6,9,"C","F"];
+	let cw=window.innerWidth-50;
+	let ch=window.innerHeight-50;
+	for(let i=0;i<10;i++){
+		let div=document.createElement("div")
+		let widths=Math.round(Math.random()*30+20);
+		let lefts=Math.round(Math.random()*cw)-cw/2;
+		let tops=Math.round(Math.random()*ch)-ch/2;
+		div.classList.add("circle");
+		div.style.cssText=`
+		  width:${widths}px;
+		  height:${widths}px;
+		  background:${color(colorArr)};
+		`;
+		point.appendChild(div);
+		setTimeout(()=>{
+			div.style.left=`${lefts}px`;
+			div.style.top=`${tops}px`;
+		},1);
+	}
+	function color(arr){
+		let str="#";
+		for(let i=0;i<3;i++){
+			let ele=Math.floor(arr.length*Math.random());
+            str += arr[ele];
+		}	
+		return str;
+	}
+//  function bgColor(){
+//		let r=Math.floor(Math.random()*256)
+//		let g=Math.floor(Math.random()*256)
+//		let b=Math.floor(Math.random()*256)
+//		return `rgb(${r},${g},${b})`;
+//	}
+
+
+</script>

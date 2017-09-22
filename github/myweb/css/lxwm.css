@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.contact{
+	width:100%;
+	height: 810px;
+	margin-top:30px;
+}
+.contact .content{
+	width:1200px;
+	height: 100%;
+	margin:0 auto;
+	background:url(../img/15.jpg);
+	background-size:cover;
+}
+.contact .content{
+	width: 1200px;
+	height: 810px;
+	margin: 0 auto;
+	position: relative;
+	background: url(../img/15.jpg) no-repeat scroll 0px -1px transparent;
+}
+.contact .content .qq{
+	left: 436px;
+	top:337px;
+	width: 136px;
+	height: 136px;
+	position: absolute;
+	 background: url(../img/qq1.png) no-repeat scroll 0% 0% transparent;
+}
+.contact .content .qq:hover{
+	background:url(../img/qq_over.png) no-repeat scroll 0px 0px transparent;
+}
+.contact .content .tel{
+	left: 760px;
+	top: 375px;
+	width: 185px;
+	height: 180px;
+	position:absolute;
+	background: url(../img/tel2.png) no-repeat scroll 0% 0% transparent;
+}
+.contact .content .tel:hover{
+	background:url(../img/tel_over.png) no-repeat scroll 0px 0px transparent;
+}
+.contact .content .mail{
+	left: 245px;
+	top: 550px;
+	width: 192px;
+	height: 192px;
+	position: absolute;
+	background: url(../img/mail3.png) no-repeat scroll 0% 0% transparent;
+}
+
+.contact .content .weibo{
+	left: 660px;
+	top: 590px; 
+	width: 211px;
+	height: 212px;
+	position: absolute;
+	background: url(../img/weibo4.png) no-repeat scroll 0% 0% transparent;	
+}

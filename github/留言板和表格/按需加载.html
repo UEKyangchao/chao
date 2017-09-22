@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+　　 へ　　　　　／|
+　　/＼7　　∠＿/
+　 /　│　　 ／　／
+　│　Z ＿,＜　／　　 /`ヽ
+　│　　　　　ヽ　　 /　　〉
+　 Y　　　　　`　 /　　/
+　ｲ●　､　●　　⊂⊃〈　　/
+　()　 へ　　　　|　＼〈
+　　>ｰ ､_　 ィ　 │ ／／
+　 / へ　　 /　ﾉ＜| ＼＼
+　 ヽ_ﾉ　　(_／　 │／／
+　　7　　　　　　　|／
+　　＞―r￣￣`ｰ―＿
+皮卡丘,对偷看者使用十万伏特
+-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="haha.css">
+</head>
+<script src="animate.js"></script>
+<body>
+  <deader>头部</deader>
+<ul class="floor">
+	<li><img path="img/1.png" alt=""></li>
+	<li><img path="img/2.png" alt=""></li>
+	<li><img path="img/3.png" alt=""></li>
+	<li><img path="img/4.png" alt=""></li>
+	<li><img path="img/5.png" alt=""></li>
+	<li><img path="img/6.png" alt=""></li>
+	<li><img path="img/7.png" alt=""></li>
+	<li><img path="img/8.png" alt=""></li>
+</ul>
+<ul class="floor">
+	<li><img path="img/1.png" alt=""></li>
+	<li><img path="img/2.png" alt=""></li>
+	<li><img path="img/3.png" alt=""></li>
+	<li><img path="img/4.png" alt=""></li>
+	<li><img path="img/5.png" alt=""></li>
+	<li><img path="img/6.png" alt=""></li>
+	<li><img path="img/7.png" alt=""></li>
+	<li><img path="img/8.png" alt=""></li>
+</ul>
+<ul class="floor">
+	<li><img path="img/1.png" alt=""></li>
+	<li><img path="img/2.png" alt=""></li>
+	<li><img path="img/3.png" alt=""></li>
+	<li><img path="img/4.png" alt=""></li>
+	<li><img path="img/5.png" alt=""></li>
+	<li><img path="img/6.png" alt=""></li>
+	<li><img path="img/7.png" alt=""></li>
+	<li><img path="img/8.png" alt=""></li>
+</ul>
+<ul class="floor">
+	<li><img path="img/1.png" alt=""></li>
+	<li><img path="img/2.png" alt=""></li>
+	<li><img path="img/3.png" alt=""></li>
+	<li><img path="img/4.png" alt=""></li>
+	<li><img path="img/5.png" alt=""></li>
+	<li><img path="img/6.png" alt=""></li>
+	<li><img path="img/7.png" alt=""></li>
+	<li><img path="img/8.png" alt=""></li>
+</ul>
+<ul class="floor">
+	<li><img path="img/1.png" alt=""></li>
+	<li><img path="img/2.png" alt=""></li>
+	<li><img path="img/3.png" alt=""></li>
+	<li><img path="img/4.png" alt=""></li>
+	<li><img path="img/5.png" alt=""></li>
+	<li><img path="img/6.png" alt=""></li>
+	<li><img path="img/7.png" alt=""></li>
+	<li><img path="img/8.png" alt=""></li>
+</ul>
+<ul class="floor">
+	<li><img path="img/1.png" alt=""></li>
+	<li><img path="img/2.png" alt=""></li>
+	<li><img path="img/3.png" alt=""></li>
+	<li><img path="img/4.png" alt=""></li>
+	<li><img path="img/5.png" alt=""></li>
+	<li><img path="img/6.png" alt=""></li>
+	<li><img path="img/7.png" alt=""></li>
+	<li><img path="img/8.png" alt=""></li>
+</ul>
+<ul class="tiaozhuan">
+	<li class='active'><a href="jacascript:;">1</a></li>
+	<li><a href="jacascript:;">2</a></li>
+	<li><a href="jacascript:;">3</a></li>
+	<li><a href="jacascript:;">4</a></li>
+	<li><a href="jacascript:;">5</a></li>
+	<li><a href="jacascript:;">6</a></li>
+	
+	
+</ul>
+<div class="search"></div>
+
+  <footer>底部</footer>
+	
+</body>
+</html>
+<script>
+	window.onload=function(){
+		let wh = window.innerHeight;//计算窗口高度wh
+		let floor = document.querySelectorAll('ul[class=floor]');
+		let newarr=[];
+		let lis =document.querySelectorAll('.tiaozhuan>li')
+		let num = 0;
+		let search = document.querySelector('.search')
+		let Sflag = true;
+		// floor.forEach(element=>{
+		// 	newarr.push(element.offsetTop)
+		// })
+		for(let i in floor){
+		   newarr.push(floor[i].offsetTop);
+		   console.log(i)
+		   console.log(newarr)
+	     }
+	     lis.forEach(function(element,index){
+	            		element.onclick=function(){
+	            			// document.body.scrollTop=newarr[index]
+	            			animate(document.body,{scrollTop:newarr[index]},1000)
+	            		}
+
+	            	})
+
+		window.onscroll=function(){
+		  let nw=document.body.scrollTop//当前文档距离整体文档左上角高度
+		    newarr.forEach(function(value,index){
+	            if(wh+nw>value+300){
+	            	 lis[index].classList.add('active')
+	            	lis[num].classList.remove('active')
+	            	num=index;
+	            	
+					let imgs=floor[index].getElementsByTagName('img')
+					for(i=0;i<imgs.length;i++){
+						imgs[i].src=imgs[i].getAttribute('path')
+			      	}
+				}	
+			})
+			if(nw>500){
+				if(Sflag){
+					Sflag=false;
+					animate(search,{top:0})
+				}
+			}
+				
+			
+			else{
+				if(!Sflag){
+					Sflag=true;
+					animate(search,{top:-50})
+				}
+			}
+
+		}
+	}
+
+</script>
+<script src="animate.js"></script>

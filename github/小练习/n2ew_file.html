@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+<body>
+		<div class="box"></div>
+	</body>
+</html>
+<script type="text/javascript">
+		var deg=30;
+		setInterval(function(){ 
+		    deg++; 
+		    x = 200 + 200*Math.cos(deg*Math.PI/180)+"px";
+		    y = 200 + 200*Math.sin(deg*Math.PI/180)+"px"; 
+		    document.body.innerHTML +="<div id='"+deg+"' style='position:absolute;margin:auto;top:0;bottom:0;left:0;right:0;width:5px; height:5px; background-color:blue; left:"+x+"; top:"+y+";'></div>"},10)
+</script>

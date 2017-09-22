@@ -1,0 +1,42 @@
+/*
+* @Author: yangchao
+* @Date:   2017-07-19 14:08:38
+* @Last Modified by:   yangchao
+* @Last Modified time: 2017-07-24 17:02:56
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.box{
+	width: 100%;
+	height: auto;
+}
+.box>li{
+	width: 25%;
+	height: 270px;
+	background: #000;
+	float: left;
+	border-right: 1px solid red;
+	border-bottom: 1px solid red;
+	box-sizing: border-box;
+}
+.box li:last-child{
+	border-right: none;
+}
+@media screen and (max-width: 992px){
+	.box>li{
+		width: 50%;
+
+	}
+	.box li:nth-child(2n){
+		border-right: none;
+	}
+}
+@media screen and (max-width: 800px){
+	.box li{
+		width: 100%;
+		border-right: none;
+	}
+}

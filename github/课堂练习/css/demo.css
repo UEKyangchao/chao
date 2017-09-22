@@ -1,0 +1,124 @@
+/*
+* @Author: yangchao
+* @Date:   2017-07-17 10:44:05
+* @Last Modified by:   yangchao
+* @Last Modified time: 2017-07-18 18:44:50
+*/
+/* .box{
+	width: 230px;
+	height: 230px;
+	background: red;
+	border-radius: 50%;
+	position: relative;
+	 
+}
+.border-box,.zhezhao{
+	width: 200px;
+	height: 200px;
+	background: blue;
+	border-radius: 50%;
+	border: 15px solid white;
+	border-left-color: #000;
+	border-top-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: all 1s;
+}
+.img-box{
+	background: pink;
+}
+.img-box img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.zhezhao{
+	background: #000;
+	opacity: 0;
+}
+.box:hover .border-box{
+	transform: rotate(180deg);
+}
+.box:hover .zhezhao{
+	opacity: 0.6;
+} */
+/* .angle{
+	width: 0px;
+	height: 0px;
+	border-top: 10px solid #000;
+	border-left: 10px  solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	transition: all 1s;
+	margin-top: 200px;
+}
+.angle:hover{
+	transform: rotate(180deg) translateY(30px);
+} */
+.box1{
+	width: 300px;
+	height: 300px;
+	background-image:
+
+	-webkit-linear-gradient(bottom,#c3f10a 20%,white 20%,skyblue 90%);
+}
+/* 第一个参数：渐变开始的方向
+单词  top left  right bottom
+角度  45deg  0deg=左边  逆时针
+第二个参数  开始的颜色
+第三个参数   结束的颜色
+第一个颜色百分比是占界面的百分比
+颜色后面的百分比是指从整个页面占比的百分之多少开始 */
+/* 2、重复的线性渐变 在前边加一个repeating  注意结束的颜色要写一个百分比 */
+.box2{
+	width: 200px;
+	height: 200px;
+	background-image: 
+	-webkit-repeating-linear-gradient( top,red, yellow 22% );
+}
+/* 3、镜像渐变
+.box{
+	background-image: 
+	-webkit-radial-gradient (center,red,yellow)
+}
+第一个参数  中心 center  20px  20px   20%  20%
+第二个参数    */
+/* .box{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-image: 
+	-webkit-radial-gradient( 20% 20%,#fff, #8f928b 40% );
+} */
+.donghua{
+	width: 200px;
+	height: 200px;
+	background: pink;
+	animation: bianse 2s ease 1s;/* 绑定到选择器 */
+	animation-timing-function:ease; /* 动画方式 */
+	animation-delay:1s;/* 动画延迟 */
+	animation-iteration-count: infinite;/* 动画次数 *//* 第一个动画只出现一次 */
+	animation-direction: alternate;/* 动画的一个方向 正向 normal */
+	animation-fill-mode: forwards;/* 规定运动的最后一个状态 */
+}
+@keyframes bianse{    /*  定义动画 1、@keyframes 动画名  */
+	0%{
+		background: pink;
+	}
+	20%{
+        background: yellowgreen;
+	}
+	70%{
+		background: blue;
+	}
+	100%{
+		background: #000;
+	}
+}
+.donghua:hover{
+	animation-play-state: paused;暂停  running: 运动;
+}

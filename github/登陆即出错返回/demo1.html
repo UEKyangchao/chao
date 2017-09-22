@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <a href="demo.html">调回去</a>
+      <button id="forward">前进</button>
+        <button id="back">后退</button>
+        <button id="refresh">刷新</button>
+    </head>
+    <script>
+    	 window.onload=function(){
+   	alert(history.length)
+   	// 通过id来获取元素
+   	let forword=document.getElementById('forword');
+   	console.log('forword')
+   	// 点击事件 
+   	forward.onclick =function(){
+   		// alert(1)
+   		history.forward();
+   	}
+   	let back=document.getElementById('back')
+   	back.onclick=function(){
+   		history.back()
+   	}
+   	let refresh =document.getElementById('refresh')
+   	refresh.onclick=function(){
+   		history.go(0)
+   	}
+   }
+
+    </script>
+    <body>
+    </body>
+</html>

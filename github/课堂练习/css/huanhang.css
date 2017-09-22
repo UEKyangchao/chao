@@ -1,0 +1,67 @@
+/*
+* @Author: yangchao
+* @Date:   2017-07-21 09:55:16
+* @Last Modified by:   yangchao
+* @Last Modified time: 2017-07-21 10:11:21
+*/
+.big-box{
+	width: 550px;
+	height: 550px;
+	background: red;
+}
+.son:nth-child(1){
+	width: 170px;
+	height: 315px;
+	background: blue;
+}
+.son:nth-child(2){
+	width: 535px;
+	height: 145px;
+	background: blue;
+}
+.son:nth-child(3){
+	width: 651px;
+	height: 345px;
+	background: blue;
+}
+.son:nth-child(4){
+	width: 986px;
+	height: 243px;
+	background: blue;
+}
+.son:nth-child(5){
+	width: 345px;
+	height: 267px;
+	background: blue;
+}
+.son:nth-child(6){
+	width: 123px;
+	height: 321px;
+	background: blue;
+}
+.son:nth-child(7){
+	width: 456px;
+	height: 654px;
+	background: blue;
+}
+
+.son:nth-child(8){
+	width: 431px;
+	height: 315px;
+	background: blue;
+}
+.son:nth-child(9){
+	width: 876px;
+	height: 1024px;
+	background: blue;
+}
+.son:nth-child(10){
+	width: 170px;
+	height: 315px;
+	background: blue;
+}
+.son:nth-child(11){
+	width: 17px;
+	height: 385px;
+	background: blue;
+}

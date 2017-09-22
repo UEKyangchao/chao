@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/demo.css">
+        <a href="demo1.html">跳到demo1</a>
+        <button id="forward">前进</button>
+        <button id="back">后退</button>
+        <button id="">刷新</button>
+    </head>
+    <script>
+ // 窗口资源加载完毕
+   window.onload=function(){
+   	alert(history.length)
+   	// 通过id来获取元素
+   	let forword=document.getElementById('forword');
+   	console.log('forword')
+   	// 点击事件 
+   	forward.onclick =function(){
+   		// alert(1)
+   		history.forward();
+   	}
+   	let back=document.getElementById('back')
+   	back.onclick=function(){
+   		history.back()
+   	}
+   }
+
+
+    </script>
+    <body>
+
+
+    </body>
+</html>

@@ -1,0 +1,711 @@
+/*
+* @Author: yangchao
+* @Date:   2017-07-19 10:49:44
+* @Last Modified by:   yangchao
+* @Last Modified time: 2017-07-20 09:27:50
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.top{
+	width: 100%;
+	height: 3.1rem;
+	background: red;
+}
+.top-top{
+	width: 100%;
+	height: 0.88rem;
+	background: red;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.top-top1{
+	width: 100%;
+	height: 0.88rem;
+	background: pink;
+}
+.top1-1{
+	width: 0.41rem;
+	height: 0.34rem;
+	/* background: yellowgreen; */
+	margin-left: 0.4rem;
+	margin-top: 0.22rem;
+	float: left;
+	margin-right: 0.41rem;
+	font-family: "iconfont";
+}
+.top1-1-1{
+	width: 0.41rem;
+	height: 0.34rem;
+	display: block;
+	font-size: 0.41rem;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 355215 */
+  src: url('http://at.alicdn.com/t/font_ez8rdjzd3iitqpvi.eot');
+  src: url('http://at.alicdn.com/t/font_ez8rdjzd3iitqpvi.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_ez8rdjzd3iitqpvi.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_ez8rdjzd3iitqpvi.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_ez8rdjzd3iitqpvi.svg#iconfont') format('svg');
+}
+.top1-2{
+	width: auto;
+	height: auto;
+	background: yellowgreen;
+	margin-top: 0.1rem;
+	float: left;
+	margin-right: 0.37rem;
+	position: relative;
+}
+.top1-2-1{
+	width: 3.98rem;
+	height: 0.66rem;
+	background: #fee9e9;
+    display: block;
+}
+.top1-2-2{
+	width: 0.66rem;
+	height: 0.66rem;
+	position: absolute;
+	top: -50%;
+	right: 0;
+	display: block;
+}
+.top1-2-2 img{
+	width: 0.66rem;
+	height: 0.66rem;
+}
+.top1-3{
+	width: 0.46rem;
+	height: 0.22rem;
+	/* background: yellowgreen; */
+	margin-top: 0.33rem;
+	float: left;
+}
+.top1-3-1{
+	width: 1.46rem;
+	height: 0.22rem;
+	display: block;
+	font-size: 0.10rem;
+    color: #fff;
+}
+.top-bottom{
+	width: 100%;
+	height: 2.22rem;
+	background: blue;
+}
+.nav-big{
+	width: 100%;
+	height: 2.92rem;
+	/* background: yellow; */
+}
+.nav-nav{
+	width: 100%;
+	height: 2.92rem;
+/* 	background: pink; */
+}
+.nav-frist{
+	width: 20%;
+	height: 1.46rem;
+	/* background: blue; */
+	float: left;
+}
+.frist-top{
+	width: 0.74rem;
+	height: 0.74rem;
+	/* background: green; */
+	margin-top: 0.08rem;
+	margin-left: 0.28rem;
+	margin-bottom: 0.15rem;
+}
+.top-1{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.frist-bottom{
+/* 	width: 0.93rem; */
+	height: 0.21rem;
+	/* background: green; */
+	display: block;
+	margin-left: 0.17rem;
+	text-align: center;
+}
+.nav-frist a{
+	display: block;
+	font-size: 0.21rem;
+    color: #000;
+}
+.frist-top img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.kuwannav{
+	width: 100%;
+	height: 0.62rem;
+	background: #f0f0f0;
+	overflow: hidden;
+}
+.kuwannav-m{
+	width: 3.2rem;
+	height: 0.3rem;
+/* 	background: yellowgreen; */
+	margin: 0.16rem auto 0.16rem;
+}
+.m-1{
+	width: 0.68rem;
+	height: 0.02rem;
+	background: #becfec;
+	margin-top: 0.16rem;
+	float: left;
+	margin-right: 0.2rem;
+}
+.m-2{
+	width: 1.44rem;
+	height: 0.3rem;
+	/* background: #becfec; */
+	/* margin-top: 0.16rem; */
+    float: left;	
+}
+.m-2-1{
+	width: 0.24rem;
+	height: 0.3rem;
+	/* background: yellow; */
+	float: left;
+	font-family: "iconfont";
+	font-size: 0.3rem;
+	line-height: 0.3rem;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 355215 */
+  src: url('http://at.alicdn.com/t/font_n4uodq8z5p63whfr.eot');
+  src: url('http://at.alicdn.com/t/font_n4uodq8z5p63whfr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_n4uodq8z5p63whfr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_n4uodq8z5p63whfr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_n4uodq8z5p63whfr.svg#iconfont') format('svg');
+}
+.m-2-2{
+	width: 1.1rem;
+	height: 0.25rem;
+/* 	background: yellow; */
+	float: right;
+	margin-top: 0.05rem;
+	font-size: 0.25rem;
+	color: #4a9fe7;
+	text-align: center;
+	line-height: 0.25rem;
+}
+.m-3{
+	width: 0.68rem;
+	height: 0.02rem;
+	background: #becfec;
+	margin-top: 0.16rem;
+	float: right;
+}
+.kuwan{
+	width: 100%;
+	height: 2.6rem;
+	background: red;
+}
+.kuwan1{
+	width: 33.33%;
+	height: 2.6rem;
+	background: pink;
+	float: left;
+}
+.kuwan1 a{
+	width: 100%;
+	height: 2.6rem;
+	display: block;
+}
+.kuwan1 a img{
+	width: 100%;
+	height: 2.6rem;
+}
+.top-bottom a{
+	width: 100%;
+	height: 2.22rem;
+	display: block;
+}
+.top-bottom a img{
+	width: 100%;
+	height: 2.22rem;
+}
+.pinpaitemai{
+	width: 100%;
+	height: 0.62rem;
+	background: #f0f0f0;
+	overflow: hidden;
+}
+.jingcaibox{
+	width: 100%;
+	height: 1.88rem;
+	background: red;
+}
+.jingcaibox1{
+	width: 50%;
+	height: 1.88rem;
+	background: pink;
+	float: left;
+	border-right: 1px solid #f0f0f0;
+	box-sizing: border-box;
+}
+.jingcaibox2{
+	border-right: 0px solid #f0f0f0;
+}
+.temai{
+	width: 50%;
+	height: 1.88rem;
+	background: blue;
+	float: left;
+}
+.temai a{
+	width: 100%;
+	height: 1.88rem;
+	display: block;
+}
+.temai a img{
+	width: 100%;
+	height: 1.88rem;
+}
+.bianjie{
+	width: 100%;
+	height: 2.5rem;
+	background: red;
+}
+.bianjie-left{
+	width: 2.84rem;
+	height: 2.48rem;
+	background:blue;
+	float: left;
+	border-right: 0.02rem solid #becfec;
+	box-sizing: border-box; 
+}
+.bianjie-right{
+	width: 3.56rem;
+	height: 2.5rem;
+	background: blue;
+	float: left;
+}
+.bianjie-right-1{
+	width: 100%;
+	height: 1.26rem;
+	background: yellow;
+	border-bottom: 2px solid #becfec;
+	box-sizing: border-box;
+}
+.bianjie-right-2{
+	width: 100%;
+	height: 1.26rem;
+	background: yellow;
+	border-bottom: 2px solid #becfec;
+	box-sizing: border-box;
+}
+.remenhangye{
+	width: 100%;
+	height: 7.23rem;
+	/* background: red; */
+}
+.remenhangye-top{
+	width: 100%;
+	height: 2.02rem;
+/* 	background: pink; */
+	border-bottom: 0.01rem solid #becfec;
+	box-sizing: border-box;
+}
+.remenhangye-top1{
+	width: 50%;
+	height: 2.02rem;
+/* 	background: red; */
+	border-right: 0.02rem solid #becfec;
+	box-sizing: border-box;
+	float: left;
+}
+.remenhangye-top1-1{
+	width: 50%;
+	height: 2.02rem;
+/* 	background: pink; */
+	float: left;
+}
+.remenhangye-top1-1 img{
+	width: 100%;
+	height: 2.02rem;
+}
+.remenhangye-top1-2{
+	width: 100%;
+	height: 0.55rem;
+	color: #000;
+	font-size: 0.35rem;
+	text-align: center;
+}
+.remenhangye-top1-3{
+	width: 100%;
+	height: 0.24rem;
+	color: #becfec;
+	font-size: 0.11rem;
+	text-align: center;
+}
+.remenhangye-top2{
+	width: 50%;
+	height: 2.02rem;
+	/* background: red; */
+	float: right;
+}
+.remenhangye-m{
+	width: 100%;
+	height: 2.62rem;
+	/* background: pink; */
+	border-bottom: 0.01rem solid #becfec;
+	box-sizing: border-box;
+}
+.remenhangye-m1{
+	width: 25%;
+	height: 2.62rem;
+/* 	background: yellowgreen; */
+	border-right: 0.02rem solid #becfec;
+	box-sizing: border-box;
+	float: left;
+}
+.remenhangye-m1-1{
+	width: 100%;
+	height: 0.5rem;
+	/* background: yellowgreen; */
+	color: #000;
+	font-size: 0.3rem;
+	text-align: center; 
+}
+.remenhangye-m1-2{
+	width: 100%;
+	height: 0.28rem;
+	/* background: blue; */
+	color: #becfec;
+	font-size: 0.11rem;
+	text-align: center; 
+}
+.remenhangye-m1-3{
+	width: 100%;
+	height: 1.82rem;
+	/* background: red; */
+}
+.remenhangye-m1-3 img{
+	width: 100%;
+	height: 1.82rem;
+}
+.logol-1 img{
+	width: 1.16rem;
+	height: 0.8rem;
+	/* background: yellow; */
+	float: left;
+}
+.remenhangye-m2{
+	width: 25%;
+	height: 2.62rem;
+/* 	background: yellowgreen; */
+	float: left;
+}
+.logo{
+	width: 100%;
+	height: 1.1rem;
+/* 	background: red; */
+	overflow: hidden;
+}
+.logo1{
+	width: 100%;
+	height: 0.8rem;
+/* 	background: pink; */
+	margin: 0.15rem;
+}
+.logol-1{
+	width: 1.16rem;
+	height: 0.8rem;
+	/* background: yellow; */
+	float: left;
+	border-right: 0.02rem solid #becfec;
+}
+.logol-2{
+	width: 4.39rem;
+	height: 0.6rem;
+/* 	background: yellowgreen; */
+	float: left;
+	margin-top: 0.05rem;
+}
+.logol-2-1{
+	width: 0.44rem;
+	height: 0.36rem;
+/* 	background: blue; */
+	margin-left: 0.21rem;
+	margin-top: 0.24rem;
+	float: left;
+}
+.logol-2-2{
+	width: 2.89rem;
+	height: 0.22rem;
+	margin-left: 0.5rem;
+	margin-top: 0.05rem;
+	float: left;
+/* 	background: blue; */
+	color: #000;
+	font-size: 0.22rem;
+}
+.logol-2-3{
+	width: 2.89rem;
+	height: 0.22rem;
+	margin-left: 0.5rem;
+	margin-top: 0.1rem;
+	float: left;
+/* 	background: blue; */
+	color: #dd2727;
+	font-size: 0.22rem;
+}
+.lunbo{
+	width: 100%;
+	height: 2.19rem;
+	background: red;
+	border-top: 0.09rem  solid  #becfec;
+	border-bottom:  0.02rem  solid  #becfec;
+	box-sizing: border-box;
+}
+.lunbo1{
+	width: 3.62rem;
+	height: 2.07rem;
+	background: pink;
+	float: left;
+	border-left: 0.06rem solid #becfec;
+	border-right: 0.12rem solid #becfec;
+	box-sizing: border-box;
+}
+.lunbo2{
+	width: 2.78rem;
+	height: 2.07rem;
+	background: yellowgreen;
+	float: left;
+	/* border-left: 0.06rem solid #becfec; */
+	/* border-right: 0.12rem solid #becfec; */
+	box-sizing: border-box;
+}
+.biqiang{
+	width: 100%;
+	height: 5.09rem;
+/* 	background: red; */	
+}
+.biqiang1{
+	width: 25%;
+	height: 2.545rem;
+/* 	background: pink; */
+	border-right: 0.01rem solid #becfec;
+	float: left;
+	box-sizing: border-box;
+}
+.biqiang1-1{
+	width: 100%;
+	height: 0.51rem;
+	/* background: red; */
+	color: #000;
+	font-size: 0.3rem;
+	text-align: center;
+}
+.biqiang1-2{
+	width: 100%;
+	height: 1.56rem;
+/* 	background: blue; */
+}
+.biqiang1-2 img{
+	width: 100%;
+	height: 1.56rem;
+}
+.biqiang1-3{
+	width: 100%;
+	height: 0.47rem;
+	/* background: green; */
+}
+.biqiang1-31{
+	width: 50%;
+	height: 0.47rem;
+/* 	background: #000; */
+	float: left;
+	color: #ff2e2e;
+	font-size: 0.3rem
+}
+.biqiang1-32{
+	width: 50%;
+	height: 0.47rem;
+	background: #fff;
+	float:right;
+	color: #9b9b9b;
+	font-size: 0.3rem;
+}
+.biqiang2{
+	width: 25%;
+	height: 2.545rem;
+	/* background: pink; */
+	border-right: 0rem solid #becfec;
+	float: left;
+	box-sizing: border-box;
+}
+.like{
+	width: 100%;
+	height: 4.54rem;
+/* 	background: red; */
+}
+.like1{
+	width: 50%;
+	height: 4.54rem;
+/* 	background: blue; */
+	border-right: 0.06rem solid #becfec;
+	box-sizing: border-box;
+	float: left;
+}
+.like2{
+	width: 50%;
+	height: 4.54rem;
+	/* background: blue; */
+	border-right: 0rem solid #becfec;
+	box-sizing: border-box;
+	float: left;
+}
+.like1-1{
+	width: 3.17rem;
+	height: 3.17rem;
+	background: pink;
+}
+.like1-2{
+	width: 3.17rem;
+	height: 0.83rem;
+/* 	background: yellow; */
+	font-size: 0.24rem;
+	color: #666666;
+	text-align: center;
+	line-height: 0.83rem;
+}
+.like1-3{
+	width: 1.26rem;
+	height: 0.41rem;
+	/* background: yellow; */
+	color: #dd2727;
+	text-align: center;
+	line-height: 0.83rem;
+	font-size: 0.24rem
+}
+.like1-1 img{
+	width: 3.17rem;
+	height: 3.17rem;
+}
+.lunbo1 img{
+	width: 3.62rem;
+	height: 2.07rem;
+}
+.lunbo2 img{
+	width: 2.78rem;
+	height: 2.07rem;
+}
+.bianjie-left img{
+	width: 100%;
+	height: 2.5rem;
+}
+.main-box{
+	width: 0.4rem;
+	height: 0.4rem;
+	/* background: red; */
+	margin: 0.1rem auto 0.1rem;
+}
+.main-box img{
+	width:100%;
+	height: 100%;
+	/* background: red; */
+	display: block;
+}
+.kuwannav-mm{
+	width: 3.2rem;
+	height: 0.3rem;
+/* 	background: yellowgreen; */
+	margin: 0.16rem auto 0.16rem;
+	overflow: hidden;
+}
+.bianjie-right-1 img{
+	width: 100%;
+	height: 1.26rem;
+}
+.bianjie-right-2 img{
+	width: 100%;
+	height: 1.26rem;
+}
+.footer{
+	width: 100%;
+	height: 2.06rem;
+	background: pink;
+	border-top: 0.06rem solid #000;
+	box-sizing: border-box;
+}
+.foot-top{
+	width: 100%;
+	height: 0.6rem;
+	background: #f0f0f0;
+	border-bottom: 3px solid #000;
+}
+.top-pic{
+	width: 12.5%;
+	height: 80%;
+	background: #f0f0f0;
+	margin: 0 auto;
+}
+.foot-top .top-pic img{
+	display: block;
+	width: 100%;
+	height: 80%;
+}
+.foot-bottom{
+	width: 100%;
+	height: 1.2rem;
+/* 	background: red; */
+}
+.foot-bottom li{
+	display: block;
+	width: 22%;
+	height: 0.8rem;
+	float: left;
+
+}
+.foot-bottom ul .last span{
+	border-right: 0px solid #000;
+}
+.foot-bottom li span{
+	display: block;
+	/* width: 15%;
+	height: 0.3rem; */
+	/* float: left; */
+	
+	font-size: 0.18rem;
+	text-align: center;
+	margin-top: 0.3rem;
+	border-right: 0.01rem solid #999;
+
+}
+.foot-bottom li a{
+	font-size: 0.2rem;
+	
+	color: #999;
+	
+}
+.fooy-dibu{
+	width: 100%;
+	height: 0.3rem;
+	background: green;
+}
+/* .foot-dibu span{
+	display: block;
+	font-size: 0.2rem;
+	color: #cccfda;
+	margin-left: 15%;
+} */
+.wenzi{
+	width: 65%;
+	height: 100%;
+	margin: 0 auto;
+	font-size: 0.2rem;
+	color: #cccfda;
+}
