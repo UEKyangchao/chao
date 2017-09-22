@@ -1,0 +1,1259 @@
+/*
+* @Author: yangchao
+* @Date:   2017-07-16 11:12:07
+* @Last Modified by:   yangchao
+* @Last Modified time: 2017-07-19 10:38:11
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑";
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 微软雅黑;
+}
+main{
+	width: 1230px;
+	height: 100%;
+/* 	background: pink; */
+	margin: 0 auto;
+}
+
+.head-x{
+	width: 100%;
+	height: 32px;
+	background: #F2F2F2;
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+
+}
+.head{
+    width: 1230px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.head-left{
+	float: left;
+}
+
+.head-left li{
+	padding-right: 20px;
+	float: left;
+	color: #999999;
+	font-size:12px;
+	margin-top: 10px;
+
+}
+.head-left li a{
+	color: #999999;
+}
+
+.head-right{
+	float: right;
+}
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 260388 */
+  src: url('http://at.alicdn.com/t/font_fpuavwjqd5k7f1or.eot');
+  src: url('http://at.alicdn.com/t/font_fpuavwjqd5k7f1or.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_fpuavwjqd5k7f1or.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_fpuavwjqd5k7f1or.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_fpuavwjqd5k7f1or.svg#iconfont') format('svg');
+}
+
+.head-right li{
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 12px;
+    color: #999999;
+    float: left;
+    margin-top: 10px;
+}
+
+.head-right li a{
+	color: #999999;
+}
+
+.hr-icon{
+	 font-family: 'iconfont';
+	 color: #FF0036;
+}
+
+.jiantou{
+	 font-family: 'iconfont';
+
+}
+
+
+.head-right li span{
+	padding-right: 3px;
+}
+
+.head-right li a:nth-of-type(1):hover{
+	color:#FF0036; 
+}
+
+.head-right li:last-child{
+	padding-right: 0;
+}
+
+.head-right li:nth-of-type(4){
+	border-right: 1px solid #999999;
+}
+
+.sousuo-x{
+	width: 100%;
+	height: 130px;
+	background: #fff;
+}
+
+.sousuo{
+	width: 1230px;
+	height: 100%;
+	margin:0 auto;
+}
+.ss-left{
+	float: left;
+}
+
+.ss-left img{
+	width: 240px;
+	height: 126px;
+
+}
+
+.ss-right{
+	width: 623px;
+	float: left;
+	margin-left: 118px;
+
+}
+
+.ssr-top1{
+	width:488px;
+	height: 36px; 
+	border: 2px solid #FF0036;
+	margin-top: 38px;
+	float: left;
+}
+.ssr-top2{
+     width: 130px;
+     height: 40px;
+     background: #FF0036;
+     float: left;
+     margin-top: 38px;
+     border: 2px solid #FF0036;
+     font-size: 22px;
+     text-align: center;
+     line-height: 36px;
+     color: #fff;
+     font-weight: bold;
+}
+
+.ssr-bottom{
+	width: 625px;
+	height: 22px;
+	
+}
+
+.ssr-bottom li{
+	padding-right: 12px;
+	padding-left: 12px;
+	border-right: 1px solid #CCCCCC;
+	color: #999999;
+	font-size: 14px;
+	float: left;
+	margin-top: 5px;
+
+}
+
+.ssr-bottom li a{
+	color: #999999;
+}
+
+.ssr-bottom li .ssrh{
+	color: #FF0036;
+}
+
+.ssr-bottom li:nth-child(1){
+	padding-left: 0;
+}
+
+.ssr-bottom li:nth-child(9){
+	border-right: none;
+}
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 355206 */
+  src: url('http://at.alicdn.com/t/font_1woam0sdxw78ehfr.eot');
+  src: url('http://at.alicdn.com/t/font_1woam0sdxw78ehfr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_1woam0sdxw78ehfr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_1woam0sdxw78ehfr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_1woam0sdxw78ehfr.svg#iconfont') format('svg');
+}
+
+.daohang-x{
+	width: 100%;
+	height: 36px;
+	background: #FF0036;
+}
+.daohang{
+	width: 1230px;
+	height: 100%;
+	margin:0 auto;
+}
+
+.dh-left{
+	font-family: 'iconfont';
+	width: 186px;
+	height: 100%;
+	background: #E22127;
+	float: left;
+	font-size:22px;
+	line-height: 36px;
+	padding-left: 14px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+
+}
+
+.dh-right{
+	width: 990px;
+	height: 100%;
+
+	float: left;
+}
+
+.dh-right li{
+
+
+     font-size: 16px;
+     line-height: 34px;
+     margin-left: 28px;
+     float: left;
+
+}
+
+
+.dh-right li a{
+    color: #fff;
+}
+
+.dh-right li .hhr{
+
+		font-family: 'iconfont';
+		line-height: 38px;
+
+
+}
+
+.banner-x{
+	width: 100%;
+	height: 500px;
+	background: #E8E8E8;
+}
+
+.bnn{
+	width: 1180px;
+	height: 500px;
+	margin:0 auto;
+	position: relative;
+
+}
+
+.bn-img{
+	width: 1180px;
+	height: 500px;
+	margin:0 auto;
+	
+}
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 355206 */
+  src: url('http://at.alicdn.com/t/font_yo1r3roomvqs38fr.eot');
+  src: url('http://at.alicdn.com/t/font_yo1r3roomvqs38fr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_yo1r3roomvqs38fr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_yo1r3roomvqs38fr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_yo1r3roomvqs38fr.svg#iconfont') format('svg');
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 355215 */
+  src: url('//at.alicdn.com/t/font_j7bblby1ttfenrk9.eot');
+  src: url('//at.alicdn.com/t/font_j7bblby1ttfenrk9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_j7bblby1ttfenrk9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_j7bblby1ttfenrk9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_j7bblby1ttfenrk9.svg#iconfont') format('svg');
+}
+.aside{
+	width: 200px;
+	height: 500px;
+	background: #EDEDED;
+	position: absolute;
+	top:0px;
+	left: -25px;
+}
+
+.aside li{
+	height: 31.19px;
+	width: 100%;
+	padding-left: 14px;
+	font-size: 14px;
+	line-height: 31.19px;
+}
+.aside li:hover{
+	background: #fff;
+	color: #427DEF;
+	font-weight: bold;
+}
+
+.aside li:hover a{
+   color: #427DEF;
+}
+
+.aside li a{
+	color: #000;
+}
+
+.as-icon{
+	font-family: 'iconfont';
+	font-size: 14px;
+}
+
+.as-dd{
+	width: 216px;
+	height: 22px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+
+	bottom:20px;
+
+}
+.as-dd .add{
+	width: 18px;
+	height: 18px;
+	background:#A2A2A2;
+	border:2px solid #A2A2A2;
+	margin-left: 7px;
+	margin-right: 7px;
+	border-radius: 50%;
+ 
+	float: left;
+}
+
+.as-dd .add:hover{
+	background:rgba(255,255,255,0.6);
+	transition: all 0.4s;
+}
+
+.tupian-x{
+	width: 100%;
+	height: 436px;
+
+}
+.kongbai{
+	width: 100%;
+	height: 60px;
+/* 	background: red; */
+	float: left;
+
+}
+.big-box{
+	width: 100%;
+	height: 436px;
+/* 	background: red; */
+	margin-top: 60px;
+}
+
+.big-f{
+	width: 488px;
+	height: 436px;
+	background: pink;
+	float: left;
+}
+.big
+.kongbai{
+	width: 100%;
+	height: 30px;
+/* 	background: red; */
+	float: left;
+}
+.five{
+	width: 1230px;
+	height: 477px;
+/* 	background: red; */
+	margin-top: 30px;
+}
+.five1{
+	width: 238px;
+	height: 477px;
+	background: blue;
+	float: left;
+	margin-right: 10px;
+}
+.five-top{
+	width: 238px;
+	height: 36px;
+	background: red;
+	line-height: 36px;
+	text-align: center;
+	color: white;
+}
+.five-bottom{
+	width: 238px;
+	height: 441px;
+	background: pink;
+
+}
+.qy{
+	font-family: "iconfont"
+	font-size: 18px;
+	line-height: 36px;
+	text-align: center;
+	color: white;
+}
+.five2{
+	width: 238px;
+	height: 477px;
+	background: blue;
+	float: left;
+/* 	margin-right: 10px; */
+}
+.guanggao{
+	width: 1230px;
+	height: 90px;
+	background: red;
+	margin-top: 10px;
+}
+.chuxing{
+	width: 100%;
+	height: 60px;
+	/* background: red; */
+}
+.fenhong{
+	width: 5px;
+	height: 20px;
+	background: #ea5f8d;
+	margin-top: 30px;
+	float: left;
+}
+.beaut{
+	 margin-top: 31px; 
+	width: 217px;
+	height: 17px;
+/* 	background: blue; */
+	float: left;
+	margin-left: 10px;
+	color: black;
+	font-size: 14px;
+}
+.ziti{
+	width: 578px;
+	height: 13px;
+	float: right;
+	margin-top: 40px;
+	margin-right: 10px;
+	/* background: blue; */
+}
+.ziti a{
+	color: #000;
+}
+.ziti li {
+    color: #000;
+    font-size: 13px;
+    padding-right: 18px;
+    float: left;
+}
+.wanbiao{
+	 padding-right: 0px;
+	  color: #000;
+    font-size: 13px;
+    float: left;
+}
+.crocs{
+	width: 246px;
+	height: 441px;
+	background: red;
+	float: left;
+}
+.crocs-right1{
+	width: 734px;
+	height: 441px;
+	/* background: yellow; */
+	float: left;
+	border-right: 1px solid #f5f5f5;
+}
+.crocs-right2{
+	width: 248px;
+	height: 440px;
+	/* background: blue; */
+	float: right;
+	overflow: hidden;
+}
+.crocs-box{
+	width: 246px;
+	height: 300px;
+	/* background: blue; */
+}
+.crocs-box1{
+	width: 246px;
+	height: 30px;
+	background: #fcf6f1;
+	color: #000;
+	line-height: 30px;
+	text-align: center;
+}
+.crocs-box1 a{
+	color: #000;
+}
+.crocs-box2{
+	width: 246px;
+	height: 110px;
+	background: green;
+	overflow: hidden;
+}
+.cross-bj1{
+	width: 246px;
+	height: 23px;
+	margin-top: 26px;
+	margin-bottom: 9px;
+	/* background: yellow; */ 
+	font-size: 23px;
+	font-weight: bold;
+	text-align: center;
+}
+.cross-bj2{
+	width: 246px;
+	height: 17px;
+	margin-bottom: 5px;
+	/* background: blue; */ 
+	font-size: 17px;
+	text-align: center;
+}
+.crocs-bj2 a{
+	color: #fff;
+}
+.crocs-bj1 a{
+	color: #fff;
+}
+.cross-bj3{
+	width: 246px;
+	height: 30px;
+	/* background: blue;  */
+}
+.right1-1{
+	width: 244px;
+	height: 220px;
+	/* background: red; */
+	border-right: 1px  solid black;
+	border-bottom: 1px  solid black;
+	float: left;
+	position: relative;
+}
+.right1-1:hover .sbl3{
+    transform: translateX(-7px);
+    transition: all  1s ease ;
+}
+.right1-2:hover .sbl3{
+    transform: translateX(-7px);
+    transition: all  1s ease ;
+}
+.right1-3:hover .sbl3{
+    transform: translateX(-7px);
+    transition: all  1s ease ;
+}
+.right1-4:hover .sbl3{
+    transform: translateX(-7px);
+    transition: all  1s ease ;
+}
+.right1-2{
+	width: 244px;
+	height: 220px;
+	/
+/* 	border-right: 1px  solid black; */
+	border-bottom: 1px  solid black;
+	float: left;
+	position: relative;
+}
+.right1-3{
+	width: 244px;
+	height: 220px;
+/* 	background: red; */
+	border-right: 1px  solid black;
+/* 	border-bottom: 1px  solid black; */
+	float: left;
+	position: relative;
+}
+.right1-4{
+	width: 244px;
+	height: 220px;
+	/* background: red; */
+	/* border-right: 1px  solid black; */
+/* 	border-bottom: 1px  solid black; */
+	float: left;
+	position: relative;
+}
+.sbl1{
+	width: 144px;
+	height: 18px;
+	/* background: blue; */
+	margin-top: 28px;
+	margin-left: 25px;
+	margin-bottom: 12px;
+	font-size: 18px;
+
+}
+.sbl1 a{
+	color: #000;
+}
+.sbl2{
+	width: 113px;
+	height: 14px;
+/* 	background: blue; */
+	/* margin-top: 28px; */
+	margin-left: 25px;
+	/* margin-bottom: 12px; */
+	font-size: 14px;
+}
+.sbl2 a{
+	color: #ea5f8d;
+}
+.sbl3{
+	width: 134px;
+	height: 134px;
+/* 	background: blue; */
+	/* margin-top: 28px; */
+	margin-left: 97px;
+	margin-top: 73px;
+	/* margin-bottom: 12px; */
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.zsb1{
+	width: 248px;
+     height: 145px;
+     border-bottom: 1px  solid  #000;
+   /*   background: red; */
+     position: relative;
+}
+.zsb2{
+	width: 248px;
+     height: 146px;
+  /*    border-bottom: 1px  solid  #000; */
+ /*     background: red; */
+       position: relative;
+}
+.zb1-1{
+	width: 127px;
+	height: 17px;
+	/* margin-top: 29px; */
+	margin-left: 24px;
+	/* background: yellow; */
+	margin-bottom: 12px;
+	font-size: 17px;
+
+}
+.zb1-1 a{
+	color: #000;
+}
+.zb1-2{
+	width: 112px;
+	height: 14px;
+/* 	background: yellow; */
+	margin-left: 24px;
+	font-size: 14px;
+	
+}
+.zb1-2 a{
+	color:#ea5f8d; 
+}
+.zb1-3{
+    width: 100px;
+    height: 100px;
+  /*   background: yellow; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+.zsb1:hover .zb1-3{
+	 transform: translateX(-7px);
+    transition: all  1s ease ;
+}
+.zsb2:hover .zb1-3{
+	 transform: translateX(-7px);
+    transition: all  1s ease ;
+}
+.chaodian{
+	width: 100%;
+	height: 60px;
+/* 	background: red; */
+	margin-top: 441px;
+}
+.lanse{
+	width: 5px;
+	height: 20px;
+	background: #0aa6e8;
+	margin-top: 30px;
+	float: left;
+}
+.kuwan{
+	width: 1229px;
+	height: 441px;
+/* 	background: blue; */
+	margin: 0 auto;
+}
+.right1-7{
+	width: 486px;
+	height: 220px;
+/* 	background: red; */
+	border-right: 1px  solid black;
+	border-bottom: 1px  solid black;
+	float: left;
+	position: relative;
+}
+.sbl7{
+	width: 195px;
+	height: 195px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.zb1-2-1{
+		width: 112px;
+	height: 14px;
+/* 	background: yellow; */
+	margin-left: 24px;
+	font-size: 14px;
+	
+}
+.sbl2-1{
+	width: 113px;
+	height: 14px;
+/* 	background: blue; */
+	/* margin-top: 28px; */
+	margin-left: 25px;
+	/* margin-bottom: 12px; */
+	font-size: 14px;
+}
+.sbl2-1, a {
+     color: #0aa6e8;
+}
+.zbi-2-1 a{
+	color: #0aa6e8;
+}
+.fav{
+	width: 100%;
+	height: 75px;
+/* 	background: red; */
+	margin-top: 440px;
+}
+.xihuan{
+	width: 1224px;
+	height: 75px;
+	margin:0 auto;
+/* 	background: blue; */
+	overflow: hidden;
+}
+.wodezuiai{
+	width: 172px;
+	height: 18px;
+	margin-top: 31px;
+	margin-left: 529px;
+/* 	background: yellow; */
+}
+.wodezuiai1{
+	width: 30px;
+	height: 1px;
+	background: #979797;
+	float: left;
+	margin-top: 9px;
+	margin-right: 9px;
+}
+.wodezuiai3{
+	width: 30px;
+	height: 1px;
+	background: #979797;
+	float: right;
+	margin-top: 9px;
+}
+.wodezuiai2{
+    width: 97px;
+    height: 18px;
+  /*     */
+  /*   margin-top: 31px; */
+    float: left;
+    color: #666666;
+    font-size: 18px;
+}
+.henduo{
+	width: 1226px;
+	height: 319px;
+	/* background: red; */
+	margin: 0 auto;
+}
+.henduo1{
+	width: 239px;
+	height: 319px;
+	/* background: pink; */
+	float: left;
+	margin-right:7px;
+}
+.henduo2{
+	width: 239px;
+	height: 319px;
+	/* background: pink; */
+	float: right;
+/* 	margin-right:8px; */
+}
+.henduo1-1{
+	width: 239px;
+	height: 249px;
+	/* background: red; */
+	margin-bottom: 17px;
+    transition: all 1s；
+}
+.henduo1-2{
+	width: 209px;
+	height: 31px;
+/* 	background: yellowgreen; */
+	margin-left: 14px;
+	margin-bottom: 12px;
+	font-size: 12px;
+	color: #b79595;
+}
+.henduo1-3{
+	width:54px ;
+	height: 12px;
+	margin-left: 14px;
+	/* background: white; */
+	font-size: 12px;
+	color: #ff5700;
+}
+.the{
+	width: 100%;
+	height: 69px;
+	background: #f5f5f5;
+	border-bottom: 1px solid #d1d7dc;
+	overflow: hidden;
+}
+.sml{
+	width: 62px;
+	height: 35px;
+/* 	background: blue; */
+	margin-left: 529px;
+	margin-top:17px ;
+}
+.baihezi{
+	width: 100%;
+	height: 151px;
+	/* background: pink; */
+}
+.baihezi1{
+	width: 1179px;
+	height: 151px;
+/* 	background: red; */
+	float: right;
+}
+.you{
+	width: 1073px;
+	height: 50px;
+/* 	background: yellowgreen; */
+	margin-left: 51px;
+	margin-top: 51px;
+	position: relative;
+}
+.you1{
+	width: 267.5px;
+	height: 50px;
+	/* background: blue; */
+	float: left;
+	border-right: 1px solid #000;
+}
+.you2{
+	width: 267.5px;
+	height: 50px;
+/* 	background: blue; */
+	float: left;
+}
+.you1-1,.a0101{
+	width: 50px;
+	height: 50px;
+/* 	background: green; */
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.you1-2{
+	width: 69px;
+	height: 17px;
+	/* background: green; */
+	position: absolute;
+	top: 4px;
+	left: 66px;
+	font-size: 17px;
+}
+.you1-2 a{
+	color: #000;
+}
+.you1-3{
+	width: 139px;
+	height: 16px;
+	/* background: green; */
+	position: absolute;
+	top: 29px;
+	left: 66px;
+	font-size: 16px;
+}
+.you1-3 a{
+	color: #a2a2a2;
+}
+.a0101{
+	font-family: "iconfont";
+     font-size: 50px;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 355215 */
+  src: url('http//at.alicdn.com/t/font_vgos1qkyof4unmi.eot');
+  src: url('http//at.alicdn.com/t/font_vgos1qkyof4unmi.eot?#iefix') format('embedded-opentype'),
+  url('http//at.alicdn.com/t/font_vgos1qkyof4unmi.woff') format('woff'),
+  url('http//at.alicdn.com/t/font_vgos1qkyof4unmi.ttf') format('truetype'),
+  url('http//at.alicdn.com/t/font_vgos1qkyof4unmi.svg#iconfont') format('svg');
+}
+.you1-1-1{
+	width: 50px;
+	height: 50px;
+/* 	background: green; */
+    position: absolute;
+    left: 268.5px;
+    top: 0;
+
+}
+.you1-2-1{
+	width: 69px;
+	height: 17px;
+	/* background: green; */
+	position: absolute;
+	top: 4px;
+	left: 334.5px;
+	font-size: 17px;
+}
+.you1-3-1{
+	width: 139px;
+	height: 16px;
+/* 	background: green; */
+	position: absolute;
+	top: 29px;
+	left: 334.5px;
+	font-size: 16px;
+}
+.you1-1-2{
+	width: 50px;
+	height: 50px;
+/* 	background: green; */
+    position: absolute;
+    left: 537px;
+    top: 0;
+
+}
+.you1-2-2{
+	width: 69px;
+	height: 17px;
+	/* background: green; */
+	position: absolute;
+	top: 4px;
+	left: 603px;
+	font-size: 17px;
+}
+.you1-3-2{
+	width: 139px;
+	height: 16px;
+	/* background: green; */
+	position: absolute;
+	top: 29px;
+	left: 603px;
+	font-size: 16px;
+}
+.you1-1-3{
+	width: 50px;
+	height: 50px;
+	/* background: green; */
+    position: absolute;
+    left: 805.5px;
+    top: 0;
+
+}
+.you1-2-3{
+	width: 69px;
+	height: 17px;
+/* 	background: green; */
+	position: absolute;
+	top: 4px;
+	left: 870.5px;
+	font-size: 17px;
+}
+.you1-3-3{
+	width: 139px;
+	height: 16px;
+/* 	background: green; */
+	position: absolute;
+	top: 29px;
+	left: 870.5px;
+	font-size: 16px;
+}
+.you1-2-1 a,.you1-2-2 a,.you1-2-3 a{
+	color: #000;
+}
+.you1-3-1 a,.you1-3-2 a,.you1-3-3 a{
+	color: #a2a2a2;
+}
+.baihezi2{
+	width: 1226px;
+	height: 214px;
+	margin: 0 auto;
+	/* background: yellow; */
+	overflow: hidden;
+}
+.service{
+	width: 100%;
+	height: 272px;
+	background: #fff;
+}
+.service-top{
+	height: 79px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.service-top li{
+	height: 25px;
+	margin-top: 27px;
+	font-size: 14px;
+	line-height: 25px;
+	padding-right: 58px;
+	border-right:1px solid #e0e0e0;
+	 float: left;
+}
+.service-text {
+	color: #616161;
+
+}
+.service-top .service-top-last{
+	border-right:none;
+}
+.service-top .service-icon{
+	font-size: 22px;
+    color: #606060;
+    padding-left: 58px;
+    padding-right: 7px;
+    border-right:none;
+}
+.service-top li:hover .service-icon{
+	color:#ff7010;
+}
+.service-top li:hover .service-text{
+	color:#ff7010;
+}
+.service-bottom{
+	width: 100%;
+	height: 192px;
+	/* background: red; */
+}
+.service-bleft{
+	width: 1045px;
+	height: 100%;
+	/* background:blue; */
+	float: left;
+}
+.service-blson{
+	width: 56px;
+	height: 112px;
+	/* background: yellowgreen; */
+	margin-top: 42px;
+	margin-right: 205px;
+	float: left;
+}
+.blson-last{
+	border-right:1px solid #e0e0e0;
+	padding-right:127px; 
+	margin-right: 0;
+}
+.service-blson li{
+	width: 100%;
+	height: 12px;
+	/* background: gray; */
+	font-size: 12px;
+	color:#424242;
+	line-height: 12px;
+	margin-bottom: 17px;
+}
+.service-blson .service-blson1{
+	margin-bottom: 32px;
+}
+.service-blson .service-blson2{
+	margin-bottom:0;
+}
+.service-blson li a{
+	font-size: 10px;
+	color: #757575;
+	/* margin-top: 17px; */
+}
+.service-blson li a:hover{
+	color: #ff7010;
+} 
+.service-bright{
+	width: 181px;
+	height: 100%;
+	/* background: green; */
+	float: right;
+}
+.service-brson{
+	width: 133px;
+	height: 112px;
+	margin: 42px auto;
+	/* background: pink; */
+}
+.service-brtext1{
+	width: 100%;
+	height: 16px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 16px;
+	color: #ff7010;
+}
+.service-brtext2{
+	width: 105px;
+	height: 105px;
+	font-size: 12px;
+	text-align: center;
+	/* line-height: 16px; */
+	color: #616161;
+	margin-top: 12px;
+}
+.service-brtext3{
+	width: 118px;
+	height: 28px;
+	background: #fff;
+	font-size: 12px;
+	text-align: center;
+	line-height: 28px;
+	color: #616161;
+	margin: 20px auto;
+	border: 1px solid #ff7010;
+}
+.service-bricon{
+	font-size: 14px;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 10px;
+	margin-right: 4px;
+	color: #ff6700;
+	float: left;
+}
+.service-brt{
+	font-size: 12px;
+	text-align: center;
+	line-height: 28px;
+	color: #ff6700;
+	float: left;
+}
+.service-brtext3:hover{
+	background: #ff6700;
+} 
+.service-brtext3:hover .service-bricon{
+	color: #fff;
+} 
+.service-brtext3:hover .service-brt{
+	color: #fff;
+} 
+.banquan{
+	width: 100%;
+	height: 200px;
+	background: #000;
+}
+.banquan-main{
+	width: 1230px;
+	height: 100%;
+	background: #000;
+	margin: 0 auto;
+	margin-left: 68px;
+}
+.banquan-main .u1 li{
+	float: left;
+	font-size: 12px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.banquan-main .u1 li a{
+	color: #fff;
+}
+.hang-1{
+	width: 100%;
+	height: 40px;
+}
+.banquan-main .u2 li{
+	float: left;
+	font-size: 12px;
+	margin-right: 10px;
+	margin-top: 10px;
+	border-right: 1px solid #fff;
+	padding-right: 5px;
+
+}
+.banquan-main .u2 li:last-child{
+	border-right: 0 solid #fff;
+}
+.banquan-main .u2 li a{
+	color: #fff;
+}
+.jingcha{
+	font-family: "iconfont";
+	font-size: 20px;
+	color: #d68e3c;
+}
+.banquan-main .hang-2 span{
+	font-size: 12px;
+	color: #a4a4a4;
+}
+.banquan-main .hang-2 span a{
+	color: #a4a4a4;
+}
+.img-box{
+	width: 80px;
+	height: 30px;
+	background: red;
+	float: left;
+}
+
+.zuidadehezi{
+	width: 100%;
+	height: 200px;
+	background: white;
+}
+.zuidadehezi2{
+	width: 100%;
+	height: 200px;
+	background: #000;
+}
+.henduo1-1:hover img{
+    transform: scale(1.1, 1.1) 
+}
+
+
+
+
+
